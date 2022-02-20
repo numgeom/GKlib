@@ -19,7 +19,6 @@
 #define __ICC__
 #endif
 
-
 #include "gk_arch.h" /*!< This should be here, prior to the includes */
 
 
@@ -46,7 +45,7 @@
 #if defined(__WITHPCRE__)
   #include <pcreposix.h>
 #else
-  #if defined(USE_GKREGEX)
+  #if defined(USE_GKREGEX) || defined(__MINGW32__)
     #include "gkregex.h"
   #else
     #include <regex.h>
