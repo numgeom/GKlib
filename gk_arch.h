@@ -42,7 +42,7 @@
 #endif
   #include <inttypes.h>
   #include <sys/types.h>
-#ifdef __MINGW32__
+#ifndef __MINGW32__
   #include <sys/resource.h>
   #include <sys/time.h>
 #endif
